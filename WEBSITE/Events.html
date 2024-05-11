@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>eventsDocument</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 10px;
+  text-align: right;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 23px;
+}
+
+ 
+
+.nav-links li a:active {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+.contact-link {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+
+body {
+  margin: 0;
+  padding-top: 60px; 
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;  
+}
+
+.block {
+  position: relative;
+  width: 30%;
+}
+
+.image-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-link img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.overlay h2,
+.overlay h6 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.image-link:hover img {
+  transform: scale(1.1);
+}
+
+.image-link:hover .overlay {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px; 
+}
+
+footer p {
+  color: white;
+}
+</style>
+</head>
+<body style="background-color: black;"> 
+    
+ 
+    <nav class="navbar">
+      <ul class="nav-links">
+         <li><a href="contactusquestion.html" class="">Contact Us </a></li> 
+          <li><a href="stars.html">Navigate The Stars </a></li>
+        
+          <li class="dropdown">
+            <a href="#" class="dropbtn contact-link " >Events</a>
+            <div class="dropdown-content">
+                <a href="Events.html"class="contact-link">New Events</a>
+                <a href="Blog.html">Blogs</a>
+            </div>
+        </li>
+          <li><a href="solarsystem.html">Solar System Planets </a></li>
+    <li><a href="space.html">Navigate The Space</a></li>
+     <li><a href="home .html">Home</a></li>
+    
+      </ul>
+  </nav>
+  
+   
+    <h3 style="color: white; font-size: 40px; padding-top: 20px;padding-left: 25px; text-align: center;">Launches & Landings</h3>
+ 
+
+    <div class="container" style="padding-left: 30px; padding-right: 30px; padding-top: 50px;">
+        <div class="block">
+            <a href="#" class="image-link">
+              <img src="imges/n1.webp" alt="Image 3">
+              <h2 style=" padding-top: 40px;"><a href="https://www.nasa.gov/event/clps-landing-intuitive-machines-im-1/" style="text-decoration: none; color: white;">CLPS Landing: Intuitive Machines (IM-1)</a></h2>
+            </a>
+            <h6  style="color: gray; margin-left: 30px;">Lanch Schedule</h6>
+          </div>
+        <div class="block">
+            <a href="#" class="image-link">
+              <img src="imges/n2.jpg" alt="Image 3">
+              <h2 style="margin-left: 20px;"><a href=" https://www.nasa.gov/event/nasas-spacex-crew-8-launch/" style="text-decoration: none;color: white; text-align: center;">NASA’s SpaceX Crew-8</a></h2>
+            </a>
+            <h6  style=" color: gray; margin-left: 30px;">Lanch Schedule</h6>
+          </div>
+        <div class="block">
+          <a href="#" class="image-link">
+            <img src="imges/n3.jpg" alt="Image 3">
+            <h2><a href="https://www.nasa.gov/event/soyuz-ms-25/" style="text-decoration: none; color: white; margin-left: 20px;">Soyuz MS-25</a></h2>
+          </a>
+          <h6  style=" color: gray; margin-left: 30px;">Lanch Schedule</h6>
+        </div>
+      </div>
+      <div class="" style=" margin-top: 190px;">
+        <footer>
+            
+            <div class="  " style="text-align: center;">
+              <p style="color: white;">&copy; 2024 Galaxy Exploration. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+ 
+
+</body>
+</html>

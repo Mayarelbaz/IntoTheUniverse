@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>home</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    text-align: right;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 23px;
+}
+
+.nav-links li a:active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-link {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.title-container {
+    text-align: right;
+    padding-right: 120px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.title-container h1 {
+    margin: 0;
+    padding-top: 80px;
+    color: white;
+    padding-right: 50px;
+}
+body {
+         
+            margin: 0;
+        }
+        
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    position: relative; 
+    font-size: 18px;
+    color: white;
+    margin-top: 25px;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-container h1 {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'inter",sans-serif';
+    z-index: 1; 
+}
+
+.video-container h6 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: gray;
+    font-size: 1rem;
+    font-family: 'inter",sans-serif';
+    z-index: 1; 
+ 
+}
+
+.video-container p {
+    position: absolute;
+    top: 50%;
+    left: calc(20% + 200px); 
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.2rem;
+    font-family: 'inter",sans-serif';
+    z-index: 1;
+    margin-top: 100px;
+     
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+    z-index: -1000;
+    overflow: hidden;
+}
+
+#video-background {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.content {
+    position: fixed;
+    top: 140px; 
+    right: 170px; 
+    font-family:  sans-serif;
+    color: white;
+    z-index: 1000; 
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  .home {
+            background-image: url(imges/blog.webp);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+.home-layer
+{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* */
+.home-text h1
+{
+    font-size: 48px;
+    padding-top: 150px;
+    color: white;
+    text-align: left;
+    padding-left: 40px;
+    margin-left: 40px;
+    margin-top: 200px;
+    font-weight: 600;
+    font-family: 'sans-serif';
+	
+}
+.home-text p{
+
+    color: white;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 70px;
+    
+    font-family: 'sans-serif';
+}
+
+.icn i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.ic i
+{    font-size: 30px;
+    width: 70px;
+    height: 50x;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f4f4f4;
+   line-height: 70px;
+   transition: all .5s
+}
+.ic i:hover{
+    background-color: black;
+    color:#f4f4f4 ;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+.footer-bottom {
+
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    width: 100%;
+    margin-left: 0%;
+
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+
+  }
+  .Bg-SeeMore{
+
+    .container {
+        background-image: url("imges/SeeMore.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  }
+
+
+  .Landing h1{
+ margin-top:  150px;
+text-align: center;
+  }
+  .block h6{
+
+    color: white;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="contactusquestion.html">Contact Us</a></li> 
+            <li><a href="stars.html">Navigate The Stars</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropbtn ">Events</a>
+              <div class="dropdown-content" >
+                  <a href="Events.html" style="color: white;">New Events</a>
+                  <a href="Blog.html " style="color: white">Blogs</a>
+              </div>
+          </li>
+            <li><a href="solarsystem.html">Solar System Planets</a></li>
+            <li><a href="space.html">Navigate The Space</a></li>
+            <li><a href="home .html" class="home-link">Home</a></li>
+        </ul>
+    </nav>
+    
+    <div class="title-container">
+        <h1 style="font-size: 43px;"><b>˚✩¡NŦO ŦHE UN¡VERŜE✩˚</b></h1>
+		
+		
+    </div>
+      
+    <div class="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="pexels-mr-borys-8047733.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+  
+        <div class="content" style="white-space: pre">
+		
+		Let's go on a wonderful adventure into the universe to discover
+                more of this entity of which we are a part of.
+				
+                          ✯Let's discover mysterious and exciting things 🪐✯
+        </div>    
+    </div>
+</body>
+</html>

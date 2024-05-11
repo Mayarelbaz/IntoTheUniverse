@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Centered Iframe with Black Background</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+              .navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+ 
+
+.navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 1000; 
+        top: 0;  
+        float: right;
+        background-color: rgba(0, 0, 0, 0.5); 
+      }
+      
+      .nav-links {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+      }
+      
+      .nav-links li {
+        margin-left: 10px;  
+        text-align: right;
+      }
+      
+      .nav-links li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        padding-right: 15px;
+        font-size: 23px;
+      }
+      
+      .nav-links li a:hover {
+        background-color: rgba(255, 255, 255, 0.2); 
+      }
+       
+      .solar-link {
+        background-color: rgba(255, 255, 255, 0.3); 
+            }
+
+.nav-links li a:active {
+    background-color: rgba(255, 255, 255, 0.3); 
+}
+.contact-link {
+    background-color: rgba(255, 255, 255, 0.3); 
+  }
+
+        .space-link {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        body {
+            background-color: black;
+            margin: 0;
+            padding-top: 60px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            background-color: black; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="contactusquestion.html">Contact Us</a></li>
+            <li><a href="stars.html" >Navigate The Stars</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn ">Events</a>
+                <div class="dropdown-content" >
+                    <a href="Events.html" style="color: white;">New Events</a>
+                    <a href="Blog.html " style="color: white">Blogs</a>
+                </div>
+            </li>
+            <li><a href="solarsystem.html">Solar System Planets</a></li>
+            <li><a href="space.html"class="space-link">Navigate The Space</a></li>
+            <li><a href="home .html">Home</a></li>
+        </ul>
+    </nav>
+    <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home"></iframe>
+    
+</body>
+</html>
